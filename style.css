@@ -21,7 +21,7 @@ body{
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button, .btn-contato2 button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -197,6 +197,7 @@ section.topo-do-site .flex{
 
 
 .topo-do-site .img-topo img{
+    border-radius: 30px;
     position: relative;
     animation: flutuar 1s ease-in-out infinite alternate-reverse;
 }
@@ -286,6 +287,43 @@ section.Sobre .flex{
 .Sobre .txt-sobre p{
     margin: 30px 0;
     text-align: justify;
+}
+
+
+.btn-download button {
+    background-color: #228b22;
+    width: auto; /* Ajuste o tamanho conforme necessário */
+    height: 55px;
+    width: 160px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px 15px;
+    transition: 0.2s;
+    display: flex; /* Torna o botão um flex container */
+    align-items: center; /* Alinha verticalmente os elementos */
+    gap: 25px;
+}
+
+.btn-download button p {
+    margin-right: 10px; /* Espaço entre o texto e o ícone */
+    padding-left: 7px;
+    font-size: 15px;
+}
+
+.btn-download a {
+    text-decoration: none;
+}
+
+
+.btn-download button i {
+    font-size: 25px;
+}
+
+
+.btn-social, .btn-download {
+    display: inline-block; /* Torna as divs de botões inline-block para ficarem lado a lado */
 }
 
 
@@ -524,6 +562,7 @@ p.footer{
         flex-direction: column-reverse;
     }
 
+    
     /* MENU MOBILE */
     .btn-abrir-menu i{
         display: block;
@@ -540,6 +579,11 @@ p.footer{
 
     .topo-do-site .img-topo img{
         width: 350px;
+    }
+    
+    .btn-contato2{
+        display: flex;
+        justify-content: center;
     }
     
     /* Cabecalho */
@@ -580,6 +624,11 @@ p.footer{
         font-size: 17px
     }
 
+    .btn-download button {
+        height: 55px;
+        width: 180px;
+        gap: 20px;
+    }
 
     /* PROJETOS */
     .img-project{
