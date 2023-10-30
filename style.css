@@ -695,3 +695,10 @@ p.footer{
         top: -78px;
     }
 }
+
+@media screen and (max-width: 430px){
+    .btn-download button {
+        left: 0px;
+        top: 10px;
+    }
+}
