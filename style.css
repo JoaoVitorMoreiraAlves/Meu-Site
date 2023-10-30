@@ -304,6 +304,8 @@ section.Sobre .flex{
     display: flex; /* Torna o botão um flex container */
     align-items: center; /* Alinha verticalmente os elementos */
     gap: 25px;
+    position: relative;
+    bottom: 6px;
 }
 
 .btn-download button p {
@@ -497,6 +499,7 @@ p.footer{
 
 
 
+
 /* RESPONSIVIDADE */
 @media screen and (max-width: 1650px){
 
@@ -506,6 +509,33 @@ p.footer{
         height: 450px; /* Defina a altura desejada */
     }
 
+}
+
+@media screen and (max-width: 1638px){
+    .btn-download button {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1406px){
+    .btn-download button {
+        bottom: 77px;
+        left: 80px;
+    }
+}
+
+
+@media screen and (max-width: 1293px){
+    .btn-download button {
+        left: 180px;
+    }
+}
+
+
+@media screen and (max-width: 1201px){
+    .btn-download button {
+        left: 80px;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -551,6 +581,14 @@ p.footer{
    
 
 }
+
+@media screen and (max-width: 1128px){
+    .btn-download button {
+        left: 180px;
+    }
+}
+
+
 @media screen and (max-width: 1020px){
 
     /* Classe Geral */
@@ -585,7 +623,7 @@ p.footer{
         display: flex;
         justify-content: center;
     }
-    
+
     /* Cabecalho */
     .menu-desktop, .btn-contato{
         display: none;
@@ -630,6 +668,11 @@ p.footer{
         gap: 20px;
     }
 
+    .btn-download button {
+        top: -5px;
+        left: -10px;
+    }
+
     /* PROJETOS */
     .img-project{
         margin-bottom: 40px;
@@ -644,4 +687,11 @@ p.footer{
        font-size: 32px;
     }
 
+}
+
+@media screen and (max-width: 573px){
+    .btn-download button {
+        left: 95px;
+        top: -78px;
+    }
 }
