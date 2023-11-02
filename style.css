@@ -1,4 +1,3 @@
-
 /*Estilo Geral */
 *{
     margin: 0;
@@ -22,6 +21,7 @@ body{
 }
 
 .btn-contato button, .btn-contato2 button{
+    /* Modificando o estilo dos botões que tem icones */
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -35,12 +35,14 @@ body{
 
 
 h2.Titulo{
+    /* Modificando todos os Titulos com h2 */
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
 button:hover, form .btn-enviar input[type=submit]:hover{
+    /* Colocando efeito para quando passar o mouse em cima dos botões eles mudarem a cor e dar um zoom */
     color: #fff;
     box-shadow: 0px 0px 8px #228b22;
     transform: scale(1.1);
@@ -59,17 +61,16 @@ header > .interface {
     justify-content: space-between;
 }
 
-
 header a{
     color: #7d7d7d;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
+
 .logo a img{
     width: 250px;
 }
-
 
 header nav.menu-desktop a:hover{
     color: #fff;
@@ -202,7 +203,6 @@ section.topo-do-site .flex{
     animation: flutuar 1s ease-in-out infinite alternate-reverse;
 }
 
-
 @keyframes flutuar{
     0%{
         top: 0;
@@ -211,8 +211,6 @@ section.topo-do-site .flex{
         top: 30px;
     }
 }
-
-
 
 /* Estilo das Habilidades */
 
@@ -289,7 +287,6 @@ section.Sobre .flex{
     text-align: justify;
 }
 
-
 .btn-download button {
     background-color: #228b22;
     width: auto; /* Ajuste o tamanho conforme necessário */
@@ -318,17 +315,22 @@ section.Sobre .flex{
     text-decoration: none;
 }
 
-
 .btn-download button i {
     font-size: 25px;
 }
-
 
 .btn-social, .btn-download {
     display: inline-block; /* Torna as divs de botões inline-block para ficarem lado a lado */
 }
 
-
+/* Essas atualizações foram feitas porque o 'a class=Btn-Download' estava dando para ser clicado quando o site quebrava e para evitar isso foi feito esses 2 estilos para poder Desativar o efeito de click no 'a class=Btn-Download' e permanecer a possibilidade do usuário clicar no botão do download */
+.btn-download a.Btn-Download {
+    pointer-events: none; /* Desativa eventos de clique apenas para o link */
+}
+  
+.btn-download a.Btn-Download button {
+    pointer-events: auto; /* Ativa eventos de clique para o botão dentro do link */
+}
 
 /* ESTILO DOS PROJETOS */
 
@@ -342,7 +344,6 @@ section.Projetos .flex{
     margin-top: 20px;
     
 }
-
 
 .img-project{
     width: 300px;
@@ -382,7 +383,6 @@ section.Projetos .flex{
     box-shadow: 0 0 20px 1px #ffffff99;
 }
 
-
 /* ESTILO DO CONTATO */
 
 section.Contato{
@@ -401,7 +401,6 @@ form{
     margin-bottom: 125px;
 }
 
-
 form input, form textarea{
     width: 100%;
     background-color: #242424;
@@ -412,7 +411,6 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;   
 }
-
 
 form input::placeholder, form textarea::placeholder{
     color: #228b22;
@@ -438,11 +436,8 @@ form .btn-enviar input[type=submit]{
     box-shadow: 0px 0px 8px #228b22;
 }
 
-
-
-
-
 /* ESTILO DO FOOTER */
+
 footer{
     padding: 80px 8%;
     box-shadow: 0 0 20px 1px #ffffff17;
@@ -455,7 +450,6 @@ footer .flex{
 footer .line-footer{
     padding: 15px 0;
 }
-
 
 .borda{
         border-top: 2px solid #228b22;
@@ -494,12 +488,6 @@ p.footer{
     color: #fff;
 }
 
-
-
-
-
-
-
 /* RESPONSIVIDADE */
 @media screen and (max-width: 1650px){
 
@@ -511,34 +499,38 @@ p.footer{
 
 }
 
+/* Responsividade para mecher no botão do Download do Currículo porque ele não ficava encaixado no site por conta de estar fora da div dos outros botões na parte do Contato */
 @media screen and (max-width: 1638px){
+
     .btn-download button {
         margin-top: 15px;
     }
 }
 
 @media screen and (max-width: 1406px){
+
     .btn-download button {
         bottom: 77px;
         left: 80px;
     }
 }
 
-
 @media screen and (max-width: 1293px){
+
     .btn-download button {
         left: 180px;
     }
 }
 
-
 @media screen and (max-width: 1201px){
+
     .btn-download button {
         left: 80px;
     }
 }
 
 @media screen and (max-width: 1200px){
+
     /* HABILIDADES */
     .Habilidade .Habilidades-box{
         width: 3000px; /* Defina a largura desejada */
@@ -553,8 +545,7 @@ p.footer{
     
     .Sobre .img-sobre img{
         width: 500px;
-    }
-    
+    } 
 }
 
 @media screen and (max-width: 1100px){
@@ -578,11 +569,10 @@ p.footer{
         gap: 30px;
         margin-top: 25px;
     }
-   
-
 }
 
 @media screen and (max-width: 1128px){
+
     .btn-download button {
         left: 180px;
     }
@@ -690,13 +680,16 @@ p.footer{
 }
 
 @media screen and (max-width: 573px){
+
     .btn-download button {
         left: 95px;
         top: -78px;
     }
 }
 
+/* Essa responsividade foi para terminar de finalizar e o botão ficar correto para celulares */
 @media screen and (max-width: 430px){
+
     .btn-download button {
         left: 0px;
         top: 10px;
