@@ -43,18 +43,27 @@
             </div>
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#topo-do-site">Início</a></li>
-                    <li><a href="#Habilidade">Habilidades</a></li>
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#topo-do-site" data-lang data-lang-pt-br="Início" data-lang-en="Home">Início</a></li>
+                    <li><a href="#Habilidade" data-lang data-lang-pt-br="Habilidades" data-lang-en="Skills">Habilidades</a></li>
+                    <li><a href="#Sobre" data-lang data-lang-pt-br="Sobre" data-lang-en="About">Sobre</a></li>
+                    <li><a href="#Projetos" data-lang data-lang-pt-br="Projetos" data-lang-en="Projects">Projetos</a></li>
                 </ul>
             </nav><!--Fim do Menu Desktop-->
 
+            <div class="lingua-flags">
+                <span id="active-flag" class="linguise_flag_pt linguise_language_icon" onclick="toggleLanguagePopup()" style="background-image: url('/images/pt-bandeira.png');"></span>
+                <div id="language-popup" class="language-popup" style="display: none;">
+                    <span class="linguise_flag_pt linguise_language_icon" onclick="changeLanguage('pt-br')" style="background-image: url('/images/pt-bandeira.png');"></span>
+                    <span class="linguise_flag_en linguise_language_icon" onclick="changeLanguage('en')" style="background-image: url('/images/en-bandeira.png');"></span>
+                </div>
+            </div>
+
             <div class="btn-contato">
                 <a href="#Contato">
-                    <button>Contato</button>
+                    <button data-lang data-lang-pt-br="Contato" data-lang-en="Contact">Contato</button>
                 </a><!--Fim do Botão Contato-->
             </div>
+
 
             <div class="btn-abrir-menu" id="btn-abrir-menu">
                 <i class="bi bi-list"></i>
@@ -69,11 +78,11 @@
 
                 <nav><!--Navegação do Header-->
                     <ul>
-                        <li><a href="#topo-do-site">Início</a></li>
-                        <li><a href="#Habilidade">Habilidades</a></li>
-                        <li><a href="#Sobre">Sobre</a></li>
-                        <li><a href="#Projetos">Projetos</a></li>
-                        <li><a href="#Contato">Contato</a></li>
+                        <li><a href="#topo-do-site" data-lang data-lang-pt-br="Início" data-lang-en="Home">Início</a></li>
+                        <li><a href="#Habilidade" data-lang data-lang-pt-br="Habilidades" data-lang-en="Skills">Habilidades</a></li>
+                        <li><a href="#Sobre" data-lang data-lang-pt-br="Sobre" data-lang-en="About">Sobre</a></li>
+                        <li><a href="#Projetos" data-lang data-lang-pt-br="Projetos" data-lang-en="Projects">Projetos</a></li>
+                        <li><a href="#Contato" data-lang data-lang-pt-br="Contato" data-lang-en="Contact">Contato</a></li>
                     </ul>
                 </nav><!--Fim da Navegação-->
 
@@ -91,15 +100,15 @@
             <div class="Interface">
                 <div class="flex">
                     <div class="frase-topo-site">
-                    <h1>"Somos o que repetidamente fazemos. A excelência, portanto, não é um feito, mas um hábito." <br>— Aristóteles</h1>
+                        <h1 data-lang data-lang-pt-br="&quot;Somos o que repetidamente fazemos. A excelência, portanto, não é um feito, mas um hábito.&quot; <br>— Aristóteles" data-lang-en="&quot;We are what we repeatedly do. Excellence, then, is not an act, but a habit.&quot; <br>— Aristotle">&quot;Somos o que repetidamente fazemos. A excelência, portanto, não é um feito, mas um hábito.&quot; <br>— Aristóteles</h1>
 
-                        <p>Como apaixonado pela tecnologia, minha jornada diária é moldada pela busca incessante de aperfeiçoamento. Cada linha de código que escrevo e cada projeto em que me envolvo são oportunidades para promover a excelência e criar um impacto positivo no mundo digital.</p>
+                        <p data-lang data-lang-pt-br="Como apaixonado pela tecnologia, minha jornada diária é moldada pela busca incessante de aperfeiçoamento. Cada linha de código que escrevo e cada projeto em que me envolvo são oportunidades para promover a excelência e criar um impacto positivo no mundo digital." data-lang-en="As a technology enthusiast, my daily journey is shaped by the relentless pursuit of improvement. Every line of code I write and every project I engage in are opportunities to promote excellence and create a positive impact in the digital world.">Como apaixonado pela tecnologia, minha jornada diária é moldada pela busca incessante de aperfeiçoamento. Cada linha de código que escrevo e cada projeto em que me envolvo são oportunidades para promover a excelência e criar um impacto positivo no mundo digital.</p>
 
-                        <p>E assim como Aristóteles disse sobre a excelência, é recompensador perceber que ao praticar a excelência consistentemente, podemos alcançar melhorias significativas em nossas vidas.</p>
+                        <p data-lang data-lang-pt-br="E assim como Aristóteles disse sobre a excelência, é recompensador perceber que ao praticar a excelência consistentemente, podemos alcançar melhorias significativas em nossas vidas." data-lang-en="And just as Aristotle said about excellence, it is rewarding to realize that by consistently practicing excellence, we can achieve significant improvements in our lives.">E assim como Aristóteles disse sobre a excelência, é recompensador perceber que ao praticar a excelência consistentemente, podemos alcançar melhorias significativas em nossas vidas.</p>
 
                         <div class="btn-contato2">
                             <a href="#Contato">
-                                <button>Entre em Contato</button>
+                                <button data-lang data-lang-pt-br="Entre em Contato" data-lang-en="Get in Touch">Entre em Contato</button>
                             </a>
                         </div><!--Fim do Botão Contato-->
                     </div><!--Fim da Frase Topo Site-->
@@ -113,25 +122,26 @@
 
         <section class="Habilidade" id="Habilidade">
             <div class="Interface">
-                <h2 class="Titulo">Minhas Habilidades</h2>
+                <h2 id="MinhaHabilidade" class="Titulo" data-lang data-lang-pt-br="Minhas Habilidades" data-lang-en="My Skills">Minhas Habilidades</h2>
                 <div class="flex">
 
                     <div class="Habilidades-box">
                         <i class="bi bi-code-square"></i>
-                        <h3>Linguagem de Programação</h3>
-                        <p>Possuo um forte interesse em linguagens de programação e estou constantemente ampliando meu conhecimento nessa área. Estou determinado a me tornar um desenvolvedor experiente e contribuir para projetos inovadores. As linguagens das quais conheço são Python, Java, C e PHP</p>
+                        <h3 data-lang data-lang-pt-br="Linguagem de Programação" data-lang-en="Programming Language">Linguagem de Programação</h3>
+
+                        <p data-lang data-lang-pt-br="Tenho grande interesse em linguagens de programação e continuo expandindo meus conhecimentos na área. Atualmente, estou focado em JavaScript, PHP e Python, trabalhando ativamente com essas linguagens em projetos profissionais. Meu objetivo é continuar me aperfeiçoando e contribuindo para soluções inovadoras e eficientes." data-lang-en="I have a strong interest in programming languages and I’m constantly expanding my knowledge in the field. Currently, I am focused on JavaScript, PHP, and Python, actively working with these languages on professional projects. My goal is to keep improving my skills and contribute to innovative and efficient solutions.">Tenho grande interesse em linguagens de programação e continuo expandindo meus conhecimentos na área. Atualmente, estou focado em JavaScript, PHP e Python, trabalhando ativamente com essas linguagens em projetos profissionais. Meu objetivo é continuar me aperfeiçoando e contribuindo para soluções inovadoras e eficientes.</p>
                     </div><!--Fim da Habilidades Box-->
 
                     <div class="Habilidades-box">
                         <i class="bi bi-database"></i>
-                        <h3>Banco de Dados</h3>
-                        <p>Embora eu ainda não tenha experiência prática em gerenciamento de bancos de dados, estou estudando ativamente esse campo e estou ansioso para aplicar meu conhecimento em projetos futuros. Estou desenvolvendo minhas habilidades no MySQL através de projetos da Faculdade</p>
+                        <h3 data-lang data-lang-pt-br="Banco de Dados" data-lang-en="Database">Banco de Dados</h3>
+                        <p data-lang data-lang-pt-br="Possuo experiência profissional na manipulação de registros e tabelas em PostgreSQL, o que me permitiu aprofundar meus conhecimentos em bancos de dados. Além disso, durante a faculdade, trabalhei com MySQL em projetos acadêmicos, o que me deu uma boa base para aplicar essas habilidades em contextos práticos. Estou empolgado para continuar aprimorando essas competências em projetos futuros." data-lang-en="I have professional experience in handling records and tables in PostgreSQL, which has allowed me to deepen my knowledge of databases. Additionally, during university, I worked with MySQL on academic projects, giving me a solid foundation to apply these skills in practical contexts. I'm excited to continue improving these abilities in future projects.">Possuo experiência profissional na manipulação de registros e tabelas em PostgreSQL, o que me permitiu aprofundar meus conhecimentos em bancos de dados. Além disso, durante a faculdade, trabalhei com MySQL em projetos acadêmicos, o que me deu uma boa base para aplicar essas habilidades em contextos práticos. Estou empolgado para continuar aprimorando essas competências em projetos futuros.</p>
                     </div><!--Fim da Habilidades Box-->
 
                     <div class="Habilidades-box">
                         <i class="bi bi-bug"></i>
-                        <h3>Solução de Desafios</h3>
-                        <p>Tenho paixão por resolver desafios e problemas complexos. Mesmo sem experiência prática, estou ansioso para enfrentar desafios de desenvolvimento e aprender com eles. Estou comprometido em encontrar soluções criativas e eficazes.</p>
+                        <h3 data-lang data-lang-pt-br="Solução de Desafios" data-lang-en="Problem Solving">Solução de Desafios</h3>
+                        <p data-lang data-lang-pt-br="Tenho paixão por resolver desafios e problemas complexos. Mesmo com a pouca experiência que adquiri, consegui trazer soluções eficientes para projetos de desenvolvimento, otimizando processos e superando obstáculos técnicos. Estou sempre em busca de novos desafios para aplicar e expandir minhas habilidades. Estou comprometido em aprender continuamente e em encontrar soluções criativas e eficazes para problemas técnicos." data-lang-en="I have a passion for solving challenges and complex problems. Despite the limited experience I’ve gained, I’ve been able to provide efficient solutions for development projects, optimizing processes and overcoming technical obstacles. I’m always looking for new challenges to apply and expand my skills. I’m committed to continuous learning and finding creative and effective solutions to technical problems.">Tenho paixão por resolver desafios e problemas complexos. Mesmo com a pouca experiência que adquiri, consegui trazer soluções eficientes para projetos de desenvolvimento, otimizando processos e superando obstáculos técnicos. Estou sempre em busca de novos desafios para aplicar e expandir minhas habilidades. Estou comprometido em aprender continuamente e em encontrar soluções criativas e eficazes para problemas técnicos.</p>
                     </div><!--Fim da Habilidades Box-->   
 
 
@@ -145,20 +155,20 @@
 
                     <div class="Habilidades-box">
                         <i class="bi bi-book"></i>
-                        <h3>Facilidade em Aprender</h3>
-                        <p>Uma das minhas maiores habilidades é aprender rapidamente. Tenho um forte desejo de adquirir conhecimento e estou sempre buscando aprender novas tecnologias e conceitos. Estou comprometido em me tornar um especialista na área de desenvolvimento.</p>
+                        <h3 data-lang data-lang-pt-br="Facilidade em Aprender" data-lang-en="Quick Learner">Facilidade em Aprender</h3>
+                        <p data-lang data-lang-pt-br="Uma das minhas maiores habilidades é aprender rapidamente. Tenho um forte desejo de adquirir conhecimento e estou sempre buscando aprender novas tecnologias e conceitos. Estou comprometido em me tornar um especialista na área de desenvolvimento." data-lang-en="One of my greatest skills is learning quickly. I have a strong desire to acquire knowledge and am always seeking to learn new technologies and concepts. I am committed to becoming an expert in the field of development.">Uma das minhas maiores habilidades é aprender rapidamente. Tenho um forte desejo de adquirir conhecimento e estou sempre buscando aprender novas tecnologias e conceitos. Estou comprometido em me tornar um especialista na área de desenvolvimento.</p>
                     </div><!--Fim da Habilidades Box-->
 
                     <div class="Habilidades-box">
                         <i class="bi bi-eye"></i>
-                        <h3>Olhar Analítico</h3>
-                        <p>Embora eu ainda esteja no início da minha jornada, estou desenvolvendo habilidades analíticas. Tenho a capacidade de analisar informações de forma crítica e estou trabalhando para aprimorar minha capacidade de identificar tendências e insights importantes. Estou determinado a tomar decisões baseadas em dados.</p>
+                        <h3 data-lang data-lang-pt-br="Olhar Analítico" data-lang-en="Analytical Mindset">Olhar Analítico</h3>
+                        <p data-lang data-lang-pt-br="Embora eu ainda esteja no início da minha jornada, estou desenvolvendo habilidades analíticas. Tenho a capacidade de analisar informações de forma crítica e estou trabalhando para aprimorar minha capacidade de identificar tendências e insights importantes. Estou determinado a tomar decisões baseadas em dados." data-lang-en="Although I am still at the beginning of my journey, I am developing analytical skills. I have the ability to critically analyze information and am working to improve my ability to identify important trends and insights. I am determined to make data-driven decisions.">Embora eu ainda esteja no início da minha jornada, estou desenvolvendo habilidades analíticas. Tenho a capacidade de analisar informações de forma crítica e estou trabalhando para aprimorar minha capacidade de identificar tendências e insights importantes. Estou determinado a tomar decisões baseadas em dados.</p>
                     </div><!--Fim da Habilidades Box-->
 
                     <div class="Habilidades-box">
                         <i class="bi bi-heart"></i>
-                        <h3>Apaixonado</h3>
-                        <p>Sou apaixonado por tecnologia e estou entusiasmado com a oportunidade de entrar no mundo da programação e desenvolvimento. Estou dedicado a contribuir com meu entusiasmo e paixão para projetos futuros, mesmo que ainda esteja no início da minha jornada.</p>
+                        <h3 data-lang data-lang-pt-br="Apaixonado" data-lang-en="Passionate">Apaixonado</h3>
+                        <p data-lang data-lang-pt-br="Sou apaixonado por tecnologia e estou entusiasmado com a oportunidade de entrar no mundo da programação e desenvolvimento. Estou dedicado a contribuir com meu entusiasmo e paixão para projetos futuros, mesmo que ainda esteja no início da minha jornada." data-lang-en="I am passionate about technology and excited about the opportunity to enter the world of programming and development. I am dedicated to contributing my enthusiasm and passion to future projects, even though I am still at the beginning of my journey.">Sou apaixonado por tecnologia e estou entusiasmado com a oportunidade de entrar no mundo da programação e desenvolvimento. Estou dedicado a contribuir com meu entusiasmo e paixão para projetos futuros, mesmo que ainda esteja no início da minha jornada.</p>
                     </div><!--Fim da Habilidades Box--> 
                 </div><!--Fim da Flex-->
             </div><!--Fim da Interface-->
@@ -166,7 +176,7 @@
 
         <section class="Sobre" id="Sobre">
             <div class="Interface">
-                <h2 class="Titulo">Sobre</h2>
+                <h2 class="Titulo" data-lang data-lang-pt-br="Sobre mim" data-lang-en="About me">Sobre mim</h2>
                 <div class="flex">
 
                     <div class="img-sobre">
@@ -174,11 +184,10 @@
                     </div><!--Fim da Imagem Sobre-->
 
                     <div class="txt-sobre">
-                        <h2>Olá, Muito Prazer, <span>Me Chamo João Vitor</span></h2>
+                        <h2 data-lang data-lang-pt-br="Olá, Muito Prazer, Me Chamo João Vitor" data-lang-en="Hello, Nice to Meet You, My Name is João Vitor">Olá, Muito Prazer, Me Chamo João Vitor</h2>
+                        <p data-lang data-lang-pt-br="Tenho 21 anos, nasci no dia 7 de fevereiro de 2003 e sou natural de São Paulo, Brasil. Atualmente, estou no 9º semestre do curso de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia de São Paulo." data-lang-en="I am 21 years old, born on February 7, 2003, and I am from São Paulo, Brazil. Currently, I am in the 9th semester of the Systems Analysis and Development course at the São Paulo Technology College.">Tenho 21 anos, nasci no dia 7 de fevereiro de 2003 e sou natural de São Paulo, Brasil. Atualmente, estou no 9º semestre do curso de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia de São Paulo.</p>
 
-                        <p>Tenho 21 anos, nasci no dia 7 de fevereiro de 2003 e sou natural de São Paulo, Brasil. Atualmente, estou no 6º semestre do curso de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia de São Paulo.</p>
-
-                        <p>Minha paixão pela programação floresceu graças ao meu amor por jogos eletrônicos. Cresci imerso no mundo dos videogames e lembro-me com carinho da minha infância, onde me divertia jogando títulos como Crash, God of War, Midnight Club 3 e muitos outros. Até que um dia, uma ideia brilhante surgiu: por que não transformar o que me faz tão feliz em uma carreira? Inicialmente, meu foco era o desenvolvimento de jogos, mas com o passar dos anos e o amadurecimento, percebi que não deveria me limitar apenas a essa área de desenvolvimento de jogos. Portanto estou disposto a abraçar desafios em qualquer área que surja a oportunidade.</p>
+                        <p data-lang data-lang-pt-br="Minha paixão pela programação floresceu graças ao meu amor por jogos eletrônicos. Cresci imerso no mundo dos videogames e lembro-me com carinho da minha infância, onde me divertia jogando títulos como Crash, God of War, Midnight Club 3 e muitos outros. Até que um dia, uma ideia brilhante surgiu: por que não transformar o que me faz tão feliz em uma carreira? Inicialmente, meu foco era o desenvolvimento de jogos, mas com o passar dos anos e o amadurecimento, percebi que não deveria me limitar apenas a essa área de desenvolvimento de jogos. Portanto estou disposto a abraçar desafios em qualquer área que surja a oportunidade." data-lang-en="My passion for programming blossomed thanks to my love for video games. I grew up immersed in the world of video games and fondly remember my childhood, where I enjoyed playing titles like Crash, God of War, Midnight Club 3, and many others. Then one day, a brilliant idea came up: why not turn what makes me so happy into a career? Initially, my focus was on game development, but over the years and with maturity, I realized that I should not limit myself to just this area of game development. Therefore, I am willing to embrace challenges in any area that presents itself.">Minha paixão pela programação floresceu graças ao meu amor por jogos eletrônicos. Cresci imerso no mundo dos videogames e lembro-me com carinho da minha infância, onde me divertia jogando títulos como Crash, God of War, Midnight Club 3 e muitos outros. Até que um dia, uma ideia brilhante surgiu: por que não transformar o que me faz tão feliz em uma carreira? Inicialmente, meu foco era o desenvolvimento de jogos, mas com o passar dos anos e o amadurecimento, percebi que não deveria me limitar apenas a essa área de desenvolvimento de jogos. Portanto estou disposto a abraçar desafios em qualquer área que surja a oportunidade.</p>
 
                         <div class="btn-social">
                             <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-moreira-alves-658a50228/"><button><i class="bi bi-linkedin" title="Link Linkedin"></i></button></a>
@@ -193,13 +202,11 @@
                         </div><!--Fim BtN-Social-->
 
                         <!--O motivo do Botão Download estar fora da div de btn-social é por conta dele ser um botão que foi estilizado de forma diferente, para conter a palavra "Download CV" ao lado do icone para melhor entedimento dos usuários-->
-                        <div class="btn-download" title="Download Currículo">
-                            <a class="Btn-Download" href="Curriculo/Currículo_João Vitor Moreira Alves.rar" download="Currículo_João Vitor Moreira Alves.zip">
-                                <button class="Button-Download">
-                                    <p>Download CV</p>
-                                    <i class="bi bi-download"></i>
-                                </button>
-                            </a>
+                        <div class="btn-download" data-lang-title data-lang-title-pt-br="Download Currículo" data-lang-title-en="Download Curriculum Vitae" title="Download Currículo">
+                            <button class="Button-Download" onclick = "baixa_cv()">
+                                <p>Download CV</p>
+                                <i class="bi bi-download"></i>
+                            </button>
                         </div><!--Fim BTN-Download-->
                     </div><!--Fim do texto Sobre-->
                 </div><!--Fim da Flex-->
@@ -208,19 +215,19 @@
 
         <section class="Projetos" id="Projetos">
             <div class="Interface">
-                <h2 class="Titulo">Meus Projetos</h2>
+                <h2 class="Titulo" data-lang data-lang-pt-br="Meus Projetos" data-lang-en="My Projects">Meus Projetos</h2>
 
                 <div class="flex">
                     
                     <a href="https://github.com/JoaoVitorMoreiraAlves/Bubble-Sort_Binary-Search">
                         <div class="img-project" style="background-image: url(images/projetos/busca_binaria.jpg);">
-                            <div class="overlay">Busca Binária</div>
+                            <div class="overlay" data-lang data-lang-pt-br="Busca Binária" data-lang-en="Binary Search">Busca Binária</div>
                          </div>
                     </a>
                     
                     <a href="https://github.com/JoaoVitorMoreiraAlves/Calculator">
                         <div class="img-project" style="background-image: url(images/projetos/Calculadora.jpeg);">
-                        <div class="overlay">Calculadora - TKinter</div>
+                        <div class="overlay" data-lang data-lang-pt-br="Calculadora - TKinter" data-lang-en="Calculator - TKinter">Calculadora - TKinter</div>
                         </div>
                     </a>
                     
@@ -236,7 +243,7 @@
                 <div class="flex">
                     <a href="https://github.com/JoaoVitorMoreiraAlves/Cursos-Alura/tree/main/Python/2-Python-Avan%C3%A7ando-na-Linguagem/EX-1-Continua%C3%A7%C3%A3o-do-Ex-2">
                         <div class="img-project" style="background-image: url(images/projetos/Games.jpeg);">
-                        <div class="overlay">Jogos Simples</div>
+                        <div class="overlay" data-lang data-lang-pt-br="Jogos Simples" data-lang-en="Simple Games">Jogos Simples</div>
                         </div>
                     </a>
 
@@ -258,18 +265,20 @@
 
         <section class="Contato" id="Contato">
             <div class="Interface">
-                <h2 class="Titulo">Me Mande um E-mail</h2>
+                <h2 class="Titulo" data-lang data-lang-pt-br="Me Mande um E-mail" data-lang-en="Send Me an Email">Me Mande um E-mail</h2>
                 
                 <form id="form" action="https://formspree.io/f/mknlylll" method="POST">
-                    <input type="text" name="Nome" id="" class="text" placeholder="Digite Seu Nome:" required>
+                    <input type="text" name="Nome" id="nome" class="text" data-lang-placeholder data-lang-placeholder-pt-br="Digite Seu Nome:" data-lang-placeholder-en="Enter Your Name:" placeholder="Digite Seu Nome:" required>
 
-                    <input type="text" name="Email" id="" class="text" placeholder="Digite Seu E-mail:" required>
+                    <input type="text" name="Email" id="email" class="text" data-lang-placeholder data-lang-placeholder-pt-br="Digite Seu E-mail:" data-lang-placeholder-en="Enter Your Email:" placeholder="Digite Seu E-mail:" required>
 
-                    <input type="text" name="Telefone" id="telefone" class="text" placeholder="Digite Seu Celular:">
+                    <input type="text" name="Telefone" id="telefone" class="text" data-lang-placeholder data-lang-placeholder-pt-br="Digite Seu Celular:" data-lang-placeholder-en="Enter Your Phone:" placeholder="Digite Seu Celular:">
 
-                    <textarea name="Mensagem" id="" cols="30" rows="10" placeholder="Digite Sua Mensagem:" required></textarea>
+                    <textarea name="Mensagem" id="mensagem" cols="30" rows="10" data-lang-placeholder data-lang-placeholder-pt-br="Digite Sua Mensagem:" data-lang-placeholder-en="Enter Your Message:" placeholder="Digite Sua Mensagem:" required></textarea>
 
-                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+                    <div class="btn-enviar">
+                        <input type="submit" data-lang data-lang-pt-br="Enviar" data-lang-en="Send" value="Enviar">
+                    </div>
                 </form><!--Fim do Form-->
             </div><!--Fim da Interface-->
         </section><!--Fim do Contato-->
@@ -307,11 +316,11 @@
                     <a href="mailto:joaomoreiraalves9@gmail.com"><button class="btn-footer"><i class="bi bi-envelope"></i></a></button>
                 </div>
                 <p>
-                    <a href="mailto:joaomoreiraalves9@gmail.com"style="margin-left: 30px;">Entre em Contato!</a>
+                    <a href="mailto:joaomoreiraalves9@gmail.com" style="margin-left: 30px;" data-lang data-lang-pt-br="Entre em Contato!" data-lang-en="Get in Touch!">Entre em Contato!</a>
                 </p>
             </div><!--Fim da Line Footer-->
 
-            <p class="footer">&copy; 2023 João Vitor Moreira Alves. Todos os direitos reservados.</p>
+            <p class="footer" data-lang data-lang-pt-br="&copy; 2023 João Vitor Moreira Alves. Todos os direitos reservados." data-lang-en="&copy; 2023 João Vitor Moreira Alves. All rights reserved.">&copy; 2023 João Vitor Moreira Alves. Todos os direitos reservados.</p>
         </div><!--Fim da Interface-->
     </footer><!--Fim do Footer-->
 </body>

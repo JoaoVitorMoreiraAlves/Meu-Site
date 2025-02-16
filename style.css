@@ -103,6 +103,37 @@ header .interface .menu-desktop li {
     transform: .2s;
 }
 
+.linguise_language_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-top: 10px;
+}
+
+.linguise_flag_pt{
+    margin-bottom: 10px;
+}
+
+.linguise_language_icon:hover {
+    transform: scale(1.1);
+}
+
+.language-popup {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    margin-left: -0.5%;
+}
+
 /* ESTILO DO MENU MOBILE */
 
 .btn-abrir-menu i{
@@ -231,7 +262,7 @@ section.Habilidade .flex{
     border-radius: 30px;
     transition: .2s;
     width: 3000px; /* Defina a largura desejada */
-    height: 350px; /* Defina a altura desejada */
+    height: 380px; /* Defina a altura desejada */
 }
 
 .Habilidade .Habilidades-box:hover{
@@ -507,11 +538,20 @@ p.footer{
     }
 }
 
-@media screen and (max-width: 1406px){
+@media screen and (max-width: 1450px){
 
     .btn-download button {
         bottom: 77px;
         left: 80px;
+    }
+
+    .language-popup {
+        margin-left: -0.7%;
+    }
+
+    /* HABILIDADES */
+    .Habilidade .Habilidades-box{
+        height: 490px;
     }
 }
 
@@ -519,6 +559,10 @@ p.footer{
 
     .btn-download button {
         left: 180px;
+    }
+    /* HABILIDADES */
+    .Habilidade .Habilidades-box{
+        height: 570px;
     }
 }
 
@@ -533,8 +577,7 @@ p.footer{
 
     /* HABILIDADES */
     .Habilidade .Habilidades-box{
-        width: 3000px; /* Defina a largura desejada */
-        height: 500px; /* Defina a altura desejada */
+        height: 640px; /* Defina a altura desejada */
     }
     
     /* SOBRE */
@@ -546,6 +589,10 @@ p.footer{
     .Sobre .img-sobre img{
         width: 500px;
     } 
+
+    .btn-lingua{
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 1100px){
@@ -561,8 +608,7 @@ p.footer{
 
     /* HABILIDADES */
     .Habilidade .Habilidades-box{
-        width: 3000px; /* Defina a largura desejada */
-        height: 530px; /* Defina a altura desejada */
+        height: 650px; /* Defina a altura desejada */
     }
     
     section.Projetos .flex{
@@ -579,7 +625,7 @@ p.footer{
 }
 
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1070px){
 
     /* Classe Geral */
     .flex{
@@ -590,8 +636,15 @@ p.footer{
         flex-direction: column-reverse;
     }
 
-    
-    /* MENU MOBILE */
+    .language-popup {
+        margin-left: -1%;
+    }
+
+    .lingua-flags{
+        margin-left: auto;
+        margin-right: 5%;
+    }
+        /* MENU MOBILE */
     .btn-abrir-menu i{
         display: block;
     }
@@ -620,11 +673,14 @@ p.footer{
     }
 
     /* Habilidades */
+    #MinhaHabilidade{
+        margin-bottom: 50px;
+    }
+    
     .Habilidade .Habilidades-box{
         width: 300px; /* Defina a largura desejada */
-        height: 500px; /* Defina a altura desejada */
+        height: 660px; /* Defina a altura desejada */
         margin: 0 auto;
-        margin-top: 50px;
     }
     
     .Habilidade .Habilidades-box i{
@@ -686,6 +742,7 @@ p.footer{
         top: -78px;
     }
 }
+
 
 /* Essa responsividade foi para terminar de finalizar e o botão ficar correto para celulares */
 @media screen and (max-width: 430px){
