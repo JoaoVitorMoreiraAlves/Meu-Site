@@ -83,10 +83,10 @@ function changeLanguage(lang) {
     // Atualizar a bandeira ativa
     var activeFlag = document.getElementById('active-flag');
     if (lang === 'pt-br') {
-        activeFlag.style.backgroundImage = "url('/images/pt-bandeira.png')"; //Imagem da bandeira brasileira
+        activeFlag.style.backgroundImage = "url('./images/pt-bandeira.png')"; //Imagem da bandeira brasileira
         document.title = "Portifólio - João Vitor"; // Título em português
     } else if (lang === 'en') {
-        activeFlag.style.backgroundImage = "url('/images/en-bandeira.png')"; // Imagem da bandeira americana
+        activeFlag.style.backgroundImage = "url('./images/en-bandeira.png')"; // Imagem da bandeira americana
         document.title = "Portfolio - João Vitor"; // Título em inglês
     }
 
